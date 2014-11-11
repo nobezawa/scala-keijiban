@@ -8,7 +8,7 @@ scalaVersion := "2.11.1"
 
 libraryDependencies ++= Seq(
   jdbc,
-  anorm,
-  cache,
+  "com.typesafe.slick" %% "slick" % "2.1.0-M2",
+  "org.xerial" % "sqlite-jdbc" % "3.7.2",
   ws
 )
