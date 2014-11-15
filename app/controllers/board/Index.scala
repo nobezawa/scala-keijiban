@@ -6,6 +6,10 @@ import play.api.data.Form
 import play.api.data.Forms._
 import scala.slick.model.codegen.SourceCodeGenerator
 
-Object Index extends Controller{
+object Index extends Controller{
+
+  def index = Action{
+    Ok(views.html.board.index("Hello world"))
+  }
 
 }
