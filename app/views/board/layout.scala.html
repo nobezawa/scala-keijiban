@@ -1,5 +1,5 @@
 @(title:String)(content: => Html)
-        
+
 @import helper.twitterBootstrap._
 
 <!DOCTYPE html>
@@ -7,9 +7,13 @@
 <html>
 <head>
     <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
     <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+    <script src="@routes.Assets.at("javascripts/bootstrap.min.js")"></script>
     </head>
     <body>
+      <div class="container bs-docs-container">
         @content
+      </div>
     </body>
 </html>
